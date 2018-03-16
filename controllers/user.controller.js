@@ -4,13 +4,16 @@ const token = require('../middlewares/token.middleware');
 
 module.exports = {
     signin: (req, res) => {
+        // console.log(req.headers);
         if (!req.headers.access_token) res.status(404).send({ message: 'no access token' });
         
         FB.api('me', { fields: ['name', 'email'], access_token: req.headers.access_token }, (data) => {
+            // console.log(data);
             if (data.error) return res.status(500).send({ message: data.error });
 
             User.findOne({ email: data.email }, (err, user) => {
                 if (data.error) return res.status(500).send({ message: data.error });
+                // console.log(user);
                 
                 if (!user) {
                     let new_user = new User({
