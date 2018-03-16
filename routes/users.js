@@ -20,7 +20,7 @@ router.get('/players-point', showLeader);
 router.post('/signin', userController.signin);
 router.post('/upload', tokenMiddleware.verify, limit.array('file'), uploadMiddleware.upload, uploadController.uplaod);
 
-router.get('/file', tokenMiddleware.verify, uploadController.findAll);
+router.get('/file', uploadController.findAll);
 
 router.use('/', leaderboardPhoto)
 
