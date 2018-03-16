@@ -17,7 +17,7 @@ module.exports = {
                         name: data.name,
                         email: data.email,
                     });
-                    console.log(new_user);
+                    
                     new_user.save(err => {
                         if (err) return res.status(500).send({ message: err });
                         return res.status(201).send({
@@ -25,12 +25,12 @@ module.exports = {
                             token: token.generate({ id: new_user._id, name: new_user.name, email: new_user.email })
                         });
                     })
+                } else {
+                    return res.status(200).send({
+                        message: 'signin success',
+                        token: token.generate({ id: user._id, name: user.name, email: user.email })
+                    });
                 }
-
-                return res.status(200).send({
-                    message: 'signin success',
-                    token: token.generate({ id: user._id, name: user.name, email: user.email })
-                });
             });
         });
     }

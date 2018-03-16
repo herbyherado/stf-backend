@@ -31,6 +31,7 @@ module.exports = {
             
             stream.end(req.files[index].buffer);
         }
+        
         next();
     },
 }
