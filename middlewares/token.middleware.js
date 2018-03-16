@@ -13,6 +13,7 @@ module.exports = {
             req.headers.id = decode.id;
             req.headers.name = decode.name;
             req.headers.email = decode.email;
+            console.log('testing123')
             next();
         } catch (error) {
             return res.status(403).send({ message: 'The user might not have the necessary permissions for a resource'})

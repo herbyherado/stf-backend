@@ -33,5 +33,17 @@ module.exports = {
                 }
             });
         });
+    },
+    getprofile: (req, res) => {
+        User.findById(req.headers.id)
+            .populate('File')
+            .then(data => {
+                res.status(200).
+                    send(data)
+            })
+            .catch(err => {
+                res.status(400).
+                    send(err)
+            })
     }
 };
