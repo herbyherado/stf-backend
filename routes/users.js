@@ -19,6 +19,7 @@ router.post('/players-point', createLeader);
 router.get('/players-point', showLeader);
 router.post('/signin', userController.signin);
 router.post('/upload', tokenMiddleware.verify, limit.array('file'), uploadMiddleware.upload, uploadController.uplaod);
+router.get('/getprofile', tokenMiddleware.verify, userController.getprofile);
 
 router.get('/file', uploadController.findAll);
 
