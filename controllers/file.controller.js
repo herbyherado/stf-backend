@@ -10,6 +10,7 @@ module.exports = {
                 url: file.cloudStoragePublicUrl,
                 like: 0
             });
+            console.log(new_file);
             fileId.push(new_file._id);
 
             new_file.save(err => {
@@ -18,7 +19,7 @@ module.exports = {
         });
 
         User.findById(req.headers.id, (err, user) => {
-            
+            console.log(user);
             user.file = user.file.concat(fileId);
             user.save(err => {
                 if (err) return res.status(500).send({ message: err });
