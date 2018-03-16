@@ -4,6 +4,6 @@ const leaderboard = require('../controllers/leaderboardPhotos.controller')
 
 router
     .get('/photos', leaderboard.viewLeaderboardPhotos)
-    // .post('/photos', leaderboard.addLeaderboardPhotos)
+    .post('/photos', leaderboard.addLeaderboardPhotos)
 
 module.exports = router;

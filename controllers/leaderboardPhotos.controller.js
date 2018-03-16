@@ -13,19 +13,20 @@ module.exports = {
             })
         })
     },
-    // addLeaderboardPhotos (req, res) {
-    //     leaderboardsPhotos.create({
-    //         photoUrl: req.body.photoUrl,
-    //         totalSmash: req.body.totalSmash
-    //     }).then(leaderboardsPhotosData => {
-    //         res.status(201).json({
-    //             message: 'data added!',
-    //             leaderboardsPhotosData
-    //         })
-    //     }).catch(err => {
-    //         res.status(500).json({
-    //             message: err
-    //         })
-    //     })
-    // }
+    addLeaderboardPhotos (req, res) {
+        leaderboardsPhotos.create({
+            uploaderName: req.body.uploaderName,
+            photoUrl: req.body.photoUrl,
+            totalSmash: req.body.totalSmash
+        }).then(leaderboardsPhotosData => {
+            res.status(201).json({
+                message: 'data added!',
+                leaderboardsPhotosData
+            })
+        }).catch(err => {
+            res.status(500).json({
+                message: err
+            })
+        })
+    }
 }
