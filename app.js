@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -5,12 +7,26 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+<<<<<<< HEAD
 mongoose.connect('mongodb://localhost:27017/stf');
+=======
+mongoose.connect('mongodb://localhost:27017/stf', (err) => {
+  if (!err) {
+    console.log('connect to Database');
+  }
+  else {
+    throw new Error(err)
+  }
+})
+const cors = require('cors');
+>>>>>>> 3388fd77b22c723578f357adbdb0831376c6fe0b
 
-var index = require('./routes/index');
 var users = require('./routes/users');
+<<<<<<< HEAD
 var api = require('./routes/api');
 const cors = require('cors');
+=======
+>>>>>>> 3388fd77b22c723578f357adbdb0831376c6fe0b
 
 
 var app = express();
@@ -25,9 +41,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+<<<<<<< HEAD
 app.use('/', index);
 app.use('/users', users);
 app.use('/api', api);
+=======
+
+app.use('/api', users);
+>>>>>>> 3388fd77b22c723578f357adbdb0831376c6fe0b
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
