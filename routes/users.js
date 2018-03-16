@@ -6,6 +6,7 @@ const uploadMiddleware = require('../middlewares/upload.middleware');
 const tokenMiddleware = require('../middlewares/token.middleware');
 const uploadController = require('../controllers/file.controller');
 const userController = require('../controllers/user.controller');
+const leaderboardPhoto = require('../routes/leaderboardPhotos.route')
 
 const limit = multer({
     storage: multer.MemoryStorage,
@@ -18,7 +19,10 @@ router.post('/players-point', createLeader);
 router.get('/players-point', showLeader);
 router.post('/signin', userController.signin);
 router.post('/upload', tokenMiddleware.verify, limit.array('file'), uploadMiddleware.upload, uploadController.uplaod);
+
 router.get('/file', tokenMiddleware.verify, uploadController.findAll);
+
+router.use('/', leaderboardPhoto)
 
 
 module.exports = router;

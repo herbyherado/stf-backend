@@ -16,6 +16,7 @@ mongoose.connect('mongodb://localhost:27017/stf', (err) => {
   }
 })
 const cors = require('cors');
+const leaderboard = require('./routes/leaderboardPhotos.route')
 
 var users = require('./routes/users');
 
@@ -30,6 +31,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.use('/api', users);
 
