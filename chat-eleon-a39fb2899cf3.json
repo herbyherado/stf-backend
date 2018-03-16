@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "chat-eleon",
+  "private_key_id": "a39fb2899cf37c69b15b1f336cfc3d1f6724c26e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDY9kVmVvXB4IWP\noPIn8K2AyxtQSnN0Nn7rEz0FG9qwLXAHfIEBs8D9RUqQcLZJafSCHWMiMsluoOf/\nW2wWDN8muQbrOTxpNaOrJpka5Hj/KdqjDQ1agocs7lL1jN8ahRg9xGDt1NM9JdLp\nCWsIMCLVdvQ8zTV+ZEOGP8XlTsScf1Bvx4QaWvk9NktgK5jKBBYpmmHLSIC3ZECl\nTbkQPtbB2hyGyYAdHHrbjkYzrnNDur8mG0h9ebSVohivUNioxDi22rI50cUD+gNS\nVRRST5DH2l+yrlMLRLcYJSdYGMhZwbM93VrZGQChX9FQu5VwZ0pQ6GbhdIBAmx2i\nUAHz12AzAgMBAAECggEACH6r/PPOr4ag9ByzHok34eER8rTXjGdN1Npt+zM5/sfo\nqQJg8rYdCk2aO8mN+ZXicu2/oeknJeO68a6crshWPGfmM3OMP/pPrDXYrMrhSexT\nmSq7qR2POV0jdmXLnngzmMeFnApHMw+2EFXEERABbSY5LeBDBe3bDviUQQQygoYP\nFzeHgbIYVsAjJMOHDUOhe2rSSnijxZvMJGtqkbKI11Rzg1cswGVcZUJRF0E94Tm8\nx6We5zb40e9r+Wa6ORLbTW/fUueQ4ctEYDQ4iOfuBOx2A5PNJw2FfU8VAYiwgjwH\nc7bISnXvqN/FASh5tuFyJEEvjt+zMYg86RTvbp4sEQKBgQD+1tqUJgTn2e9iWuof\niLHb4kiyWHyQ6pQE+wMW4FBDPt4wsdsofjsugfL4Q5l2P8qhre4/LIBYDAVxKA/u\n39P0Ceqrc/F9+XyUgDpNTxDuq5SsaGW7rfnTX9orJLyNlc0BIKLS1nqNt7QU+iLv\novNvc/bsCrjStrMHDPxSrQui1wKBgQDZ80B4HOGJnxbVYGAFP3USRH7PC4upvUr4\nZrGxcKt6yH3upV+q3lH0fnL2yPDCgXtjXf9J4aXBAudJ3ZTBGaQ1e1YcccjBBONg\ngdVENOHCJmaHlrkOAD5Dz8fcadzsdOMrDnCapGrCC9kKqXQ+6Hkj6/mt6cNA3sO6\nqrE2zbgeBQKBgFRSWU7N6a+hwADGXlOC0n8UN8OzXbxBsiqXt+T44fXuNmzcXMzg\nP8raur+E9qFW6EBpIb0Lh4gaqi5P+D2tGB/WrCyBF7X8OEmWyDPOZqbiZTZK8OaR\n4WkcfT7rT+x1Vbj6yIWE7FY6I78RKUArpesJ7vkZbyBhzYkWteLRWVlPAoGAZVdX\nLcJ4GG6xxkuGukn0XKces5Txvt42ouPVUeVKxs+8xp98qU2wm9fECv4J/NcKEX0e\nfDMAyItaEh2G0nbixL9xnc5Gg4GLXE9iY9GW+5ixafBqYZk5WnyduN48jHIZQub2\n8uDqhwnNRMjgNXQRB+Psd7JPSLWMGxrNRedH6iUCgYEA9JkRpxxzJ+t4mncQhZBd\nMYEOvzlnlu8q+uPAovptdJ7H4lFa8bISuiCJqb2HWLARCWcblGdgFPAMW+ORfuGk\nO2rVI71op8yqdaDWvVLXfmQRTh+Lk0zXzpY4JtUXjhOXIfQ4S4yOr2iDjNaE1Ha8\nlGjJgRYZTWOnt4J4rKwIyww=\n-----END PRIVATE KEY-----\n",
+  "client_email": "stf-storage@chat-eleon.iam.gserviceaccount.com",
+  "client_id": "118019704200020441183",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/stf-storage%40chat-eleon.iam.gserviceaccount.com"
+}

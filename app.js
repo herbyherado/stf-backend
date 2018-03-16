@@ -5,16 +5,17 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/stf');
+mongoose.connect('mongodb://localhost:27017/stf');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var api = require('./routes/api');
 const cors = require('cors');
 
 
 var app = express();
 
-app.use(cors);
+app.use(cors());
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/api', api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
