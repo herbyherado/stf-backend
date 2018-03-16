@@ -32,5 +32,16 @@ module.exports = {
                 });
             })
         });
+    },
+
+    findAll: (req, res) => {
+        File.find((err, file) => {
+            if (err) return res.status(500).send({ message: err });
+
+            return res.status(200).send({
+                message: 'get file success',
+                file
+            });
+        })
     }
 };
